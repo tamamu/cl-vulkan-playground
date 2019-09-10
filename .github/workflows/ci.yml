@@ -20,7 +20,7 @@ jobs:
           curl -L https://raw.githubusercontent.com/roswell/roswell/master/scripts/install-for-ci.sh | sh
       - name: Install dependencies
         run: |
-          ros install cl-vulkan
+          ros install 3b/cl-vulkan
       - name: Install Rove
         run: ros install rove
       - name: Run tests
