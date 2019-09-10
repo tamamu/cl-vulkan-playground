@@ -76,5 +76,6 @@
                   (cffi:with-foreign-objects
                     ((p-memory-properties '(:struct %vk:physical-device-memory-properties)))
                     (%vk:get-physical-device-memory-properties device p-memory-properties)
-                    (%foreign-struct-to-plist p-memory-properties '(:struct %vk:physical-device-memory-properties)))))))
+                    (%foreign-struct-to-plist p-memory-properties '(:struct %vk:physical-device-memory-properties)))))
+    t))
 
